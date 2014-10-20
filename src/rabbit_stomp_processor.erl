@@ -211,7 +211,8 @@ process_connect(Implicit, Frame,
                       {ok, DefaultVHost} = application:get_env(
                                              rabbitmq_stomp, default_vhost),
                       {ProtoName, _} = AdapterInfo#amqp_adapter_info.protocol,
-                      io:format("Q: ~p~n", [Frame1]),
+                      %% printreceived STOMP Frame
+                      %% io:format("Q: ~p~n", [Frame1]),
                       Res = do_login(
                               Username, Passwd,
                               login_header(Frame1, ?HEADER_HOST, DefaultVHost),
