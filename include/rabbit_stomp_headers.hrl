@@ -25,6 +25,9 @@
 -define(HEADER_DESTINATION, "destination").
 -define(HEADER_EXPIRATION, "expiration").
 -define(HEADER_HEART_BEAT, "heart-beat").
+-define(HEADER_PRODUCT, "product").
+-define(HEADER_PRODUCT_VERSION, "product-version").
+-define(HEADER_PLATFORM, "platform").
 -define(HEADER_HOST, "host").
 -define(HEADER_ID, "id").
 -define(HEADER_LOGIN, "login").
